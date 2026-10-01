@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #111827;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home Section */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+            padding: 30px;
+        }
+
+        .home-content h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .home-content h2 {
+            font-size: 25px;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .home-content p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #111827;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* Common Section */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+            color: #2563eb;
+        }
+
+        /* About */
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 25px;
+            width: 150px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #ddd;
+            font-weight: bold;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ddd;
+        }
+
+        .project h3 {
+            color: #2563eb;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            line-height: 1.6;
+        }
+
+        /* Education */
+        .education {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 5px 15px #ddd;
+        }
+
+        /* Contact */
+        .contact {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact button {
+            width: 100%;
+            padding: 13px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #1d4ed8;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+
+            .home-content h1 {
+                font-size: 35px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home-content">
+
+            <h1>Hello, I'm Deva</h1>
+
+            <h2>B.Tech ECE Student</h2>
+
+            <p>
+                Welcome to my personal portfolio website.
+                I am interested in technology, programming,
+                electronics and software development.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a B.Tech student interested in electronics,
+                programming and web development. I enjoy learning
+                new technologies and building useful projects.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">SQL</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+                <h3>Smart Irrigation System</h3>
+                <p>
+                    An IoT-based project that helps automate
+                    irrigation using sensors and a microcontroller.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Expense Tracker</h3>
+                <p>
+                    A simple application for recording expenses
+                    and monitoring monthly spending.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>Student Management System</h3>
+                <p>
+                    A system for storing and managing student
+                    information, marks and attendance.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education">
+
+            <h3>B.Tech - Electronics and Communication Engineering</h3>
+
+            <p>
+                KL University, Vaddeswaram, Andhra Pradesh.
+            </p>
+
+            <p>
+                2025 - 2029
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Your Email">
+
+            <textarea rows="6" placeholder="Your Message"></textarea>
+
+            <button type="button">Send Message</button>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Your Name | Personal Portfolio</p>
+
+    </footer>
+
+</body>
+</html>
